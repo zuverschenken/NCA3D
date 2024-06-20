@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>NCA3D</title>
+        <link rel="stylesheet" type="text/css" href="./static/NCA_style.css">
+
+
+        <script type="importmap">
+          {
+            "imports": {
+              "three": "https://cdn.jsdelivr.net/npm/three@0.164.1/build/three.module.js",
+              "three/examples/": "https://cdn.jsdelivr.net/npm/three@0.164.1/examples/jsm/"
+            }
+          }
+          
+        </script>
+
+        
+    </head>
+    <body>
+
+        
+        <div class="directions">
+            <p> Grab object with LEFT MOUSE</p> 
+            <p> Zoom in/out with MOUSE WHEEL</p> 
+            <p> Press E/Right Click to apply deformation </p>
+            <p> Press R to apply tumor</p>
+        </div>
+
+        <div class="parent-container" id="parent-container">
+            <div class="ui-container" id="ui-container"></div>
+            <div class="canvas-div" id="three-canvas"></div>
+        </div>
+
+        <script type="module" src="{{ url_for('static', filename='onnxlogic.js') }}"></script>
+        <script type="module" src="{{ url_for('static', filename='main.js') }}"></script>    
+        <script>
+
+            var modelConfigs = {{ data|tojson }};
+
+        </script>
+
+        </body>
+</html>

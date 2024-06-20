@@ -1,0 +1,1 @@
+{"pig": {"colors": "pig", "ndim": 16}, "dog": {"colors": "dog", "ndim": 20}, "notResilientDog": {"colors": "dog", "ndim": 20}, "chicken": {"colors": "chicken", "ndim": 16}, "cow": {"colors": "cow", "ndim": 24}}

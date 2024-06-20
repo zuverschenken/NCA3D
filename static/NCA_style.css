@@ -1,0 +1,170 @@
+html, body{
+	margin: 0;
+	background-color: rgb(30, 30, 30);
+}
+
+.nav-bar {
+  position: relative;
+  padding: 10px 20px; 
+  min-height: 64px;
+  background-color: #333; 
+  color: #fff; 
+  display: flex; 
+  /*justify-content: space-between;*/ 
+  align-items: center;
+  text-align: center;
+  border-bottom: 2px solid rgb(53,28,21);
+  font-family: Consolas, Lucida Console, sans-serif;
+  z-index: 4;
+}
+
+.nav-title {
+	font-weight: bold;
+	font-size: 24px;
+	margin: 0 auto;
+}
+
+.nav-link {
+  color: rgb(245,245,235);
+  text-decoration: none; 
+  cursor: pointer; 
+  border: 7px solid transparent;
+  transition: border-color 0.3s; 
+}
+
+.nav-link:hover {
+  border-color: #fff; 
+}
+
+
+
+/**/
+
+.nav-btn {
+  color: rgb(245,245,235);
+  background-color: transparent;
+  border: 7px solid transparent;
+  transition: border-color 0.3s;
+  cursor: pointer;
+}
+.nav-btn:hover {
+  border-color: #fff;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.nav-dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+.info-modal {
+  display: none; 
+  position: fixed; 
+  z-index: 3; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; 
+  background-color: rgba(0, 0, 0, 0.5); 
+}
+
+
+.info-modal-content {
+  margin: 15% ; 
+  padding: 0 5%;
+  background-color: rgb(30,30,30);
+  border: 5px solid rgb(53,28,21);
+  width: 85%; 
+  min-height: 50vh;
+  color: rgb(245,245,235);
+  text-align: center;
+  font-family: Consolas, Lucida Console, sans-serif;
+  overflow-y: auto;
+  font-size: 16px;
+}
+
+
+.info-modal-content a {
+  color: rgb(150, 0, 0); 
+}
+.close {
+  color: #aaa; 
+  float: right; 
+  font-size: 28px; 
+  font-weight: bold; 
+}
+
+.close:hover,
+.close:focus {
+  color: black; 
+  text-decoration: none; 
+  cursor: pointer; 
+}
+
+
+
+.directions{
+	//background-color: rgb(30, 30, 30);
+	position: absolute;
+	top: 40%;
+	left: 30px;
+	padding: 0px;
+	margin: 0 0%;
+	font-family: Consolas, Lucida Console, sans-serif;
+	font-size: 19px;
+	color: rgb(245,245,235);
+	z-index: 1;
+
+
+
+}
+
+.parent-container{
+	position: relative;
+}
+
+.ui-container{
+	position: absolute;
+	z-index: 2;
+}
+
+.canvas-div {
+	position: absolute
+  	border: solid 0px blue;
+	padding: 0;
+	margin: 0 auto;
+	width: 100%;
+	height: 820px;
+}
+
+.lil-gui { 
+	--number-color: #00c8c8;
+	--title-background-color: #1e1e1e;
+	--font-size: 12;
+	--font-family: "Consolas, sans-serif;
+}
+
+
+
+
